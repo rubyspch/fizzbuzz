@@ -25,17 +25,22 @@ MOD=modulus
     // print number
 
     function fizzBuzz(){
+        var outputDiv= document.getElementById("FBresult");
+
         for (let number =1; number<=100; number++){
             if (number%3===0 && number%5===0 ){
-                console.log("fizzbuzz");
+                outputDiv.innerHTML+="FIZZBUZZ <br/>";
             } else if(number%3===0){
-                console.log("fizz");
+                outputDiv.innerHTML+="FIZZ<br/>";
             } else if (number%5===0){
-                console.log("buzz");
+                outputDiv.innerHTML+="BUZZ<br/>";
             } else {
-                console.log(number);
+                outputDiv.innerHTML+=`${number}<br/>`;
             }
         }
     }
-    
+
+var goButton= document.getElementById("button");
+goButton.addEventListener('click', function(){
     fizzBuzz();
+});
