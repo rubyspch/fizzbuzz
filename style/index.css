@@ -12,6 +12,10 @@ body{
     background-color: #ff0101;
     color:#FFFFFF;
 }
+#button:hover{
+    background-color: #bd0000;
+    cursor:pointer;
+}
 #FBresult{
     margin-top:3vh;
     max-height:100%;
