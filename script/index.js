@@ -29,11 +29,11 @@ MOD=modulus
 
         for (let number =1; number<=100; number++){
             if (number%3===0 && number%5===0 ){
-                outputDiv.innerHTML+="FIZZBUZZ <br/>";
+                outputDiv.innerHTML+="<span style='color:#FF0000'>FIZZBUZZ <br/></span>";
             } else if(number%3===0){
-                outputDiv.innerHTML+="FIZZ<br/>";
+                outputDiv.innerHTML+="<span style='color:#00FF00'>FIZZ<br/></span>";
             } else if (number%5===0){
-                outputDiv.innerHTML+="BUZZ<br/>";
+                outputDiv.innerHTML+="<span style='color:#0000FF'>BUZZ<br/></span>";
             } else {
                 outputDiv.innerHTML+=`${number}<br/>`;
             }
