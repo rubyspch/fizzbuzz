@@ -9,4 +9,6 @@ body{
     max-height:100%;
     width:50vw;
     border:1px solid black;
+    font-size:3vw;
+    line-height:4.5vh;
 }
